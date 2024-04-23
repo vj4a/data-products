@@ -2,6 +2,7 @@
 - hosts: "{{remote}}"
   vars_files:
     - "{{inventory_dir}}/secrets.yml"
+    - "{{inventory_dir}}/common.yml"
   become: yes
   become_user: "{{ analytics_user }}"
   environment:
